@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save Options</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; justify-content: space-between;">
+            <hr class="hr-style">
+            <div class="head">YAY! It's BOGO</div>
+            <hr class="hr-style">
+        </div>
+
+        
+        <div class="bundle-option" onclick="selectOption(this, '195')">
+            <label style="display: flex;justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="radio" name="bundle" checked aria-label="1 Unit - DKK 195.00, 50% OFF">
+                    <div style="text-align: left;">
+                        <div>1 Unit <span class="discount-box">50% OFF</span></div>
+                        <span style="font-size: 15px; font-weight: 500;">Standard Price</span>
+                    </div> 
+                </div>
+                <div style="text-align: left;">
+                    $10.00 USD
+                    <br>
+                    <del style="opacity: 50%;font-size: 12px;">$24.00 USD</del>
+                </div>
+            </label>
+            <div class="options">
+                <div style="display: flex; justify-content: space-evenly;  margin-right: 150px;">
+                    <div style="font-size: 12PX;">Size</div>
+                    <div style="font-size: 12PX;">Colour</div>
+                   
+                </div>
+                <div style="display: flex; justify-content: flex-start; gap: 3px;">
+                    <div style="margin-left: 16px;">
+                        <sub>#1</sub>
+                    </div>
+                    <div>
+                        <select style="width: 60px; height: 25px;" id="size1" aria-label="Select size for 1 Unit">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="width: 64px; height: 25px;" id="color1" aria-label="Select color for 1 Unit">
+                            <option>Colour</option>
+                            <option>Colour 1</option>
+                            <option>Colour 2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+         <fieldset class="bundle-option" onclick="selectOption(this, '350')">
+            <legend style="text-align: right;">
+                <div class="discount-box" style="padding: 5px; font-weight: bold; font-size: 10px;border-radius: 10%;">MOST POPULAR</div>
+            </legend>
+            <label style="text-align: left;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="radio" name="bundle" aria-label="2 Units - DKK 350.00, 10% OFF">
+                    
+                    <div>2 Unit <span class="discount-box">20% OFF</span></div>
+                </div>
+                <div style="text-align: left;">
+                    $18.00 USD
+                    <br>
+                    <del style="opacity: 50%;font-size: 12px;">$24.00 USD</del>
+                </div>
+            </label>
+            <div class="options">
+                <div style="display: flex; justify-content: space-evenly;  margin-right: 150px;">
+                    <div style="font-size: 12PX;">Size</div>
+                    <div style="font-size: 12PX;">Colour</div>
+
+                </div>
+                <div style="display: flex; justify-content: flex-start; gap: 3px;">
+                    <div style="margin-left: 16px;">
+                        <sub>#1</sub>
+                    </div>
+                    <div>
+                        <select style="width: 60px; height: 25px;" id="size2_1" aria-label="Select size for first item of 2 Units">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="width: 64px; height: 25px;" id="color2_1" aria-label="Select color for first item of 2 Units">
+                            <option>Colour</option>
+                            <option>Colour 1</option>
+                            <option>Colour 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: flex-start; gap: 3px;">
+                    <div style="margin-left: 16px;">
+                        <sub>#2</sub>
+                    </div>
+                    <div>
+                        <select style="width: 60px; height: 25px;" id="size2_2" aria-label="Select size for second item of 2 Units">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="width: 64px; height: 25px;" id="color2_2" aria-label="Select color for second item of 2 Units">
+                            <option>Colour</option>
+                            <option>Colour 1</option>
+                            <option>Colour 2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+       
+        <div class="bundle-option" onclick="selectOption(this, '500')">
+            <label style="text-align: left;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="radio" name="bundle" aria-label="3 Units - DKK 500.00, 15% OFF">
+                    <div>
+                        3 Unit <span class="discount-box">15% OFF</span></div> 
+                    
+                </div>
+                <div style="text-align: left;">
+                    $24.00 USD
+                    <br>
+                    <del style="opacity: 50%;font-size: 12px;">$24.00 USD</del>
+                </div>
+            </label>
+            <div class="options">
+                <div style="display: flex; justify-content: space-evenly; margin-right: 150px;">
+                    <div style="font-size: 12PX;">Size</div>
+                    <div style="font-size: 12PX; ">Colour</div>
+                    
+                </div>
+                <div style="display: flex; justify-content: flex-start; gap: 3px;">
+                    <div style="margin-left: 16px;">
+                        <sub>#1</sub>
+                    </div>
+                    <div>
+                        <select style="width: 60px; height: 25px;" id="size3_1" aria-label="Select size for first item of 3 Units">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="width: 64px; height: 25px;" id="color3_1" aria-label="Select color for first item of 3 Units">
+                            <option>Colour</option>
+                            <option>Colour 1</option>
+                            <option>Colour 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: flex-start; gap: 3px;">
+                    <div style="margin-left: 16px;">
+                        <sub>#2</sub>
+                    </div>
+                    <div>
+                        <select style="width: 60px; height: 25px;" id="size3_2" aria-label="Select size for second item of 3 Units">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="width: 64px; height: 25px;" id="color3_2" aria-label="Select color for second item of 3 Units">
+                            <option>Colour</option>
+                            <option>Colour 1</option>
+                            <option>Colour 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: flex-start; gap: 3px;">
+                    <div style="margin-left: 16px;">
+                        <sub>#3</sub>
+                    </div>
+                    <div>
+                        <select style="width: 60px; height: 25px;" id="size3_3" aria-label="Select size for third item of 3 Units">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="width: 64px; height: 25px;" id="color3_3" aria-label="Select color for third item of 3 Units">
+                            <option>Colour</option>
+                            <option>Colour 1</option>
+                            <option>Colour 2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div  style="display: flex;justify-content: space-between;">
+                <div style="color: rgb(244, 66, 96);font-weight: bold;">
+                    Free Delivery
+                </div>
+                <div>
+                    Total: <b>$18.00 USD</b>
+                </div>
+            </div>
+        </div>
+
+      
+        <button class="add-to-cart"> + Add to Cart</button>
+        <div style="margin-top: 3px; font-size: 12px;opacity: 50%; text-align: end;font-style: italic;">
+            &copy; Powered by Pumber
+        </div>
+    </div>
+    <script>
+        function selectOption(element, price) {
+            const options = document.querySelectorAll('.bundle-option');
+            options.forEach(option => {
+                option.classList.remove('selected');
+            });
+            element.classList.add('selected');
+        }
+    </script>
+
+</body>
+</html>
